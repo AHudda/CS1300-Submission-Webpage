@@ -17,6 +17,27 @@ body {
   }
 }
 
+#intro{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#usabilityProblems{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#visualRedesign{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#responsiveRedesign{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#reflection{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 #imageSpecifications{
   width: 500px;
   height: auto; 
