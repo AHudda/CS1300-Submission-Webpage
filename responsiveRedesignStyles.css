@@ -1,0 +1,83 @@
+body {
+    background-color:#ffffff;
+    margin: 0;  
+  }
+
+#pageHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  h1{
+    margin-bottom: 10px;
+  }
+  h2{
+    margin: 0;
+  }
+}
+
+#intro{
+  margin-left: 20px;
+  margin-right: 20px;
+  h4{
+    margin-bottom: 0px;
+  }
+}
+#usabilityProblems{
+  margin-left: 20px;
+  margin-right: 20px;
+  h4{
+    margin-bottom: 0px;
+  }
+}
+#visualRedesign{
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  h4{
+    margin-bottom: 0px;
+  }
+}
+#responsiveRedesign{
+  margin-left: 20px;
+  margin-right: 20px;
+  h4{
+    margin-bottom: 0px;
+  }
+}
+#reflection{
+  margin-left: 20px;
+  margin-right: 20px;
+  h4{
+    margin-bottom: 0px;
+  }
+}
+
+#imageSpecifications{
+  width: 500px;
+  height: auto; 
+}
+#largerImageSpecifications{
+  width: 800px;
+  height: auto;
+}
+
+.pageHeaderText{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 35px;
+}
+.pageSubheaderText{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+.headerText{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+.bodyText{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+}
