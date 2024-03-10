@@ -1,0 +1,59 @@
+body {
+    background-color:#ffffff;
+    margin: 0;  
+  }
+
+#pageHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  h1{
+    margin-bottom: 10px;
+  }
+  h2{
+    margin: 0;
+  }
+}
+
+.sectionSpecifications{
+    margin-left: 20px;
+    margin-right: 20px;
+    h4{
+      margin-bottom: 0px;
+    }
+}
+
+#imageSpecifications{
+  width: 700px;
+  height: auto; 
+}
+
+ul {
+    font-size: 18px;
+}
+ul li{
+    margin-bottom: 5px;
+}
+.boldText {
+    font-weight: bold;
+}
+
+.pageHeaderText{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 35px;
+}
+.pageSubheaderText{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+.headerText{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+.bodyText{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+}
