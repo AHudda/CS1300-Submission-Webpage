@@ -72,11 +72,15 @@ body {
   font-family:'Times New Roman', Times, serif;
   font-size: 30px;
 }
+
 .headerText{
   font-family:'Times New Roman', Times, serif;
   font-size: 25px;
 }
-
+.subHeaderText{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 22px;
+}
 .bodyText{
   font-family:'Times New Roman', Times, serif;
   font-size: 20px;
