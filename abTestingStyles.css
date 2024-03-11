@@ -34,7 +34,7 @@ ul {
     font-size: 18px;
 }
 ul li{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .boldText {
     font-weight: bold;
@@ -48,11 +48,15 @@ ul li{
   font-family:'Times New Roman', Times, serif;
   font-size: 30px;
 }
+
 .headerText{
   font-family:'Times New Roman', Times, serif;
-  font-size: 25px;
+  font-size: 24px;
 }
-
+.subHeaderText{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 22px;
+}
 .bodyText{
   font-family:'Times New Roman', Times, serif;
   font-size: 20px;
