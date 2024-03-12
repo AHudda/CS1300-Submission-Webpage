@@ -24,6 +24,9 @@ body {
       margin-bottom: 0px;
     }
 }
+.additionalIndent{
+  margin-left: 20px;
+}
 
 .websiteVersions{
     display: flex;
