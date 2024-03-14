@@ -30,7 +30,11 @@
       <div class="sectionSpecifications">
         <h3 class="headerText">II. Data Collection</h3>
         <h4 class="subHeaderText">Methodology</h4>
-        <p class="bodyText">description of methodology here</p>
+        <p class="bodyText">Data for this project was collected during a studio session of approximately 40 students total. Students took turns completing a specific 
+          task on a TA's computer to gather data for Version A. Next, students made changes to Version A of the webpage to create Version B. Lastly, students walked
+          around and completed the same specific task on each other's computers to gather data for Version B. The specific task was to select an appointment with a 
+          specific person, and at a speciifc location, date and time.
+        </p>
         <!-- Website Images -->
         <div class="websiteVersions">
           <div>
@@ -56,52 +60,101 @@
       <!-- Analysis-->
       <div class="sectionSpecifications">
         <h3 class="headerText">III. Analysis</h3>
+        <!-- Misclick Rate -->
         <h4 class="subHeaderText">i. Misclick Rate</h4>
         <p class="bodyText additionalIndent">Hypotheses</p>
           <ul class="additionalIndent">
             <li><span class="boldText">Metric Of Choice:</span> The metric of choice is did_misclick, which is a boolean flag indicating if the user pushed a 
               button external to the task.</li>
-            <li><span class="boldText">Null Hypothesis: </span> The misclick rate for Version A is the same as the misclick rate for Version B.</li>
-            <li><span class="boldText">Alternative Hypothesis:</span> The misclick rate for Version A will be greater than the misclick rate for Version B.</li>
-            <li><span class="boldText">Predictions & Justifications:</span> I believe that I will reject the null hypothesis. Version A has twice as many buttons 
-              as Version B, which means there are more opportunities to misclick in Version A. Since there is a clearer color contrast between the button color/text 
-              and the buttons in B are outlined in black when hovered in Version B, users are most likely to misread and click the wrong button in Version A. 
-              Additionally, Version A lacks dividers, whereas Version B includes them. In Version A, it will be more difficult for users to figure out which buttons 
-              correspond to which appointment, thus creating more opportunities to misclick. Lastly, appointments in Version A are not sorted chronologically by 
-              the date they occur on, whereas in Version B they are ordered accordingly. Users will have a harder time finding their appointment in Version A, since 
-              appointments aren’t ordered chronologically, and this will lead to more misclicks. Hence, I believe Version A will have a greater misclick rate than 
-              Version B, which is my alternative hypothesis.</li>
+            <li><span class="boldText">Null Hypothesis: </span> The distribution of misclicks is the same for Version A and Version B.</li>
+              <ul>
+                <li>I predict that I will reject the null hypothesis. As noted in my justification for my alternative hypothesis, design changes introduced in 
+                  Version B include fewer buttons, clearer color contrast for the buttons, button hover effects, adding dividers, and ordering the appointments 
+                  chronologically. These design modifications were strategically made to improve the readability and structure of the webpage. I predict the design 
+                  differences between Versions A and B will influence user interaction with the page. After skimming the data, it appears that more people 
+                  misclicked in Version A. Due to the design differences between Versions A and B and the observed discrepancy between the two versions’ misclicks, 
+                  I predict that the statistical test’s results will find statistically significant differences in the distributions of misclicks for Versions A 
+                  and B. Thus, I predict that I will find statistically significant differences and reject the null hypothesis.
+                </li>
+              </ul>
+            <li><span class="boldText">Alternative Hypothesis:</span> The distribution of misclicks is different for Version A and Version B.</li>
+              <ul>
+                <li>I believe that the design differences between Versions A and B will influence the number of misclicks on each version, thus leading to 
+                  different distributions of misclicks for each version. Version A has twice as many buttons as Version B, meaning there are more options for users 
+                  to click. Unlike Version A, Version B’s clearer color contrast between the button color/text and the hover effect of outlining a hovered button 
+                  in black makes the text on buttons more legible and provides the user with visual confirmation that the button is “clickable.” Additionally, the 
+                  dividers in Version B provide more structure and assist users in identifying which button corresponds with which appointment. Lastly, appointments 
+                  in Version B are ordered chronologically. These design features in Version B will assist users in determining whether the button they want to 
+                  click is the correct one or not. Hence, I believe that the distribution of misclicks will be different for Version A and Version B.
+                </li>
+              </ul>
           </ul>
+            
         <p class="bodyText additionalIndent">Statistical Testing</p>
           <ul class="additionalIndent">
-            <li><span class="boldText">Type Of Test:</span> I chose a chi-squared test because did_misclick is a boolean, categorical value. </li>
-            <li><span class="boldText">Statistical Significance & Important Values:</span> xyz </li>
-            <li><span class="boldText">Conclusion:</span> xyz </li>
+            <li><span class="boldText">Type Of Test:</span> The metric I am using is did_misclick which is a categorical value that can either be true (did misclick) 
+              or false (didn't misclick). Since the metric is categorical, I chose to use a chi-squared test. 
+            </li>
+            <li><span class="boldText">Statistical Significance & Important Values:</span> I found a statistically significant difference in the distribution of 
+              misclicks for Versions A and B, as p<=0.05. The p-value = 0.0399, meaning there is only a 3.99% chance that Version A and Version B have the same 
+              misclick distribution. The chi^squared statistic records the magnitude of difference between the misclick distributions for Versions A and B. A 
+              chi^squared statistic that is greater than 2.5 is extreme. Here, the chi^squared statistic = 4.2207, indicating that there is a large magnitude of 
+              difference between Version A and Version B’s misclick distributions. The df (degrees of freedom) = 1, which correctly indicates that there is only 
+              one category being compared: did_misclick. A theoretical distribution where the misclick distributions for Versions A and B are the same expects 5 
+              users to misclick and 29 users not to misclick (17.24% of users to misclick). However, the observed frequency of misclicking deviates from the 
+              expected value, as 24% of users misclicked on Version A and 6% of users misclicked on Version B.
+            </li>
+            <li><span class="boldText">Conclusion:</span> I reject the null hypothesis and find statistically significant evidence that the alternative hypothesis 
+              is true, since p-value <=0.05. There is only a 3.99% chance that Versions A and B will have the same misclick distribution, and therefore only a 
+              3.99% chance that the null hypothesis is true. Additionally, a theoretical distribution where Versions A and B have the same misclick distribution 
+              expects 17.24% of users to misclick. However, 24% of users misclicked on Version A and 6% of users misclicked on Version B. These deviations from 
+              the expected misclick distribution highlight the differences between Version A and Version B’s misclick distributions. Thus, I reject the null 
+              hypothesis and am confident that the alternative hypothesis is true.
+            </li>
           </ul>
-
+        
+          <!-- Time On Page -->
         <h4 class="subHeaderText">ii. Time On Page</h4>
         <p class="bodyText additionalIndent">Hypotheses</p>
           <ul class="additionalIndent">
             <li><span class="boldText">Metric Of Choice:</span> The metric of choice is time_on_page, which is the total time that the user spent on the page in 
               milliseconds.</li>
             <li><span class="boldText">Null Hypothesis:</span> The amount of time spent Version A is the same as the amount of time spent on Version B.</li>
+              <ul>
+                <li>I predict that I will reject the null hypothesis. As noted in my justification for my alternative hypothesis, design changes introduced in 
+                  Version B include fewer buttons, clearer color contrast for the buttons, button hover effects, adding dividers, and ordering the appointments 
+                  chronologically. These design modifications were strategically made to improve the readability and structure of the webpage. I predict the design 
+                  differences between Versions A and B will influence user interaction with the page. After skimming the data, it appears that more users spent a 
+                  longer time on Version A. Due to the design differences between Versions A and B and the observed discrepancy between the two versions’ 
+                  time_on_page metric, I predict that the statistical test’s results will find statistically significant differences in the amount of time spent on 
+                  Versions A and B. Thus, I predict that I will find statistically significant differences and reject the null hypothesis.
+                </li>
+              </ul>
             <li><span class="boldText">Alternative Hypothesis:</span> The amount of time spent on Version A is greater than the amount of time spent on Version B.</li>
-            <li><span class="boldText">Predictions & Justifications:</span> I believe that I will reject the null hypothesis. Version A has twice as many buttons 
-              as Version B, which means users will spend more time figuring out which button to click in Version A. Since there is a clearer color contrast between 
-              the button color/text and the buttons in B are outlined in black when hovered in Version B, users are most likely to take longer to read the buttons 
-              on Version A. Additionally, Version A lacks dividers, whereas Version B includes them. It will take users a longer time to figure out which button 
-              corresponds to which appointment in Version A. Lastly, appointments in Version A are not sorted chronologically by the date they occur on, whereas 
-              in Version B they are ordered accordingly. It will take the user a longer time to find their appointment in Version A, since the appointments aren’t 
-              ordered chronologically. Hence, I believe a greater amount of time will be spent on Version A than Version B, which is my alternative hypothesis.</li>
+              <ul>
+                <li>I believe that the design differences between Versions A and B will influence the amount of time spent on each version, resulting in users 
+                  spending more time on Version A than on Version B. Version A has twice as many buttons as Version B, meaning there are more options that users 
+                  must read over and process. Unlike Version A, Version B’s clearer color contrast between the button color/text and the hover effect of outlining 
+                  a hovered button in black makes the text on buttons more legible and provides the user with visual confirmation that they are hovering the correct 
+                  button. Additionally, the dividers in Version B provide more structure for users as they visually separate which button corresponds with which 
+                  appointment. Lastly, appointments in Version B are ordered chronologically, which is a standardized ordering method that users are accustomed to 
+                  seeing. These design features in Version B will assist users in navigating the webpage by providing more readability and structure, thus 
+                  decreasing the time necessary to complete various tasks. Hence, I believe that the amount of time spent on Version A is greater than the amount 
+                  of time spent on Version B.
+                </li>
+              </ul>
           </ul>
         <p class="bodyText additionalIndent">Statistical Testing</p>
           <ul class="additionalIndent">
-            <li><span class="boldText">Type Of Test:</span> I chose a t-test because time_on_page is a continuous value. Since the alternative hypothesis states 
-              “greater than,” I will use a one-tailed t-test rather than a two-tailed t-test.</li>
+            <li><span class="boldText">Type Of Test:</span> The metric I am using is time_on_page which is a continuous value. Since the metric is 
+              continuous, I chose to use a t-test. The alternative hypothesis states “greater than,” so I will use a one-tailed t-test (rather than a two-tailed 
+              t-test). 
+            </li>
             <li><span class="boldText">Statistical Significance & Important Values:</span> xyz </li>
             <li><span class="boldText">Conclusion:</span> xyz </li>
           </ul>
 
+        <!-- Time Until User Executed First Click -->
         <h4 class="subHeaderText">iii. Time Until User Executed First Click</h4>
         <p class="bodyText additionalIndent">Hypotheses</p>
           <ul class="additionalIndent">
@@ -109,22 +162,38 @@
               to execute his/her first click in milliseconds.</li>
             <li><span class="boldText">Null Hypothesis:</span> The time until the user first clicked on Version A is the same as the time until the user first 
               clicked on Version B.</li>
-            <li><span class="boldText">Alternative Hypothesis:</span> The time until the user first clicked on Version A is higher than the time until the user 
+              <ul>
+                <li>I predict that I will reject the null hypothesis. As noted in my justification for my alternative hypothesis, design changes introduced in 
+                  Version B include fewer buttons, clearer color contrast for the buttons, button hover effects, adding dividers, and ordering the appointments 
+                  chronologically. These design modifications were strategically made to improve the readability and structure of the webpage. I predict the design 
+                  differences between Versions A and B will influence user interaction with the page. After skimming the data, it appears that more users spent a 
+                  longer time before clicking for the first time on Version A. Due to the design differences between Versions A and B and the observed discrepancy 
+                  between the two versions’ time_to_first_click metric, I predict that the statistical test’s results will find statistically significant 
+                  differences in the time spent before the user first clicked on Versions A and B. Thus, I predict that I will find statistically significant 
+                  differences and reject the null hypothesis.
+                </li>
+              </ul>
+            <li><span class="boldText">Alternative Hypothesis:</span> The time until the user first clicked on Version A is greater than the time until the user 
               first clicked on Version B.</li>
-            <li><span class="boldText">Predictions & Justifications:</span> I believe that I will reject the null hypothesis. Version A has twice as many buttons 
-              as Version B, which means it will take them a longer time to figure out which button to click first in Version A. Since there is a clearer color 
-              contrast between the button color and button text in Version B, users are most likely to take longer to read and execute their first click on the 
-              buttons on Version A. Additionally, Version A lacks dividers, whereas Version B includes them. It will take users a longer time to figure out which 
-              buttons correspond to which appointment and therefore take them a longer time to click for the first time in Version A. Lastly, appointments in 
-              Version A are not sorted chronologically by the date they occur on, whereas in Version B they are ordered accordingly. It will take the user a longer 
-              time to find their appointment and execute their first click in Version A, since the appointments aren’t ordered chronologically. Hence, I believe 
-              that the time until the user first clicks on Version A will be higher than the time until the user first clicks on Version B, which is my alternative 
-              hypothesis.</li>
+              <ul>
+                <li>I believe that the design differences between Versions A and B will influence the time spent before the user first clicked on each version, 
+                  resulting in users taking longer to first click on Version A than on Version B. Version A has twice as many buttons as Version B, meaning there 
+                  are more options that users must read over and process. Unlike Version A, Version B’s clearer color contrast between the button color/text and 
+                  the hover effect of outlining a hovered button in black makes the text on buttons more legible and provides the user with visual confirmation 
+                  that they are hovering the correct button. Additionally, the dividers in Version B provide more structure for users as they visually separate
+                  which button corresponds with which appointment. Lastly, appointments in Version B are ordered chronologically, which is a standardized ordering 
+                  method that users are accustomed to seeing. These design features in Version B will assist users in navigating the webpage by providing more 
+                  readability and structure, thus decreasing the time needed to execute the first click. Hence, I believe that the time spent before the user first 
+                  clicked on Version A is greater than the time spent before the user first clicked on Version B.
+                </li>
+              </ul>
           </ul>
         <p class="bodyText additionalIndent">Statistical Testing</p>
           <ul class="additionalIndent">
-            <li><span class="boldText">Type Of Test:</span> I chose a t-test because time_to_first_click is a continuous value. Since the alternative hypothesis 
-              states “greater than,” I will use a one-tailed t-test rather than a two-tailed t-test.</li>
+            <li><span class="boldText">Type Of Test:</span> The metric I am using is time_to_first_click which is a continuous value. Since the metric 
+              is continuous, I chose to use a t-test. The alternative hypothesis states “greater than,” so I will use a one-tailed t-test (rather than a two-tailed 
+              t-test). 
+            </li>
             <li><span class="boldText">Statistical Significance & Important Values:</span> xyz </li>
             <li><span class="boldText">Conclusion:</span> xyz </li>
           </ul>
