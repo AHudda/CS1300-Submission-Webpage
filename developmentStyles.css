@@ -18,8 +18,8 @@ body {
 }
 
 .sectionSpecifications{
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 95px;
+    margin-right: 95px;
     h4{
       margin-bottom: 0px;
     }
@@ -32,6 +32,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 5px;
+
+    h4{
+      font-size: 18px;
+    }
 }
 
 .smallImageSpecifications{
@@ -87,4 +92,12 @@ ul li{
 .bodyText{
   font-family:'Times New Roman', Times, serif;
   font-size: 20px;
+}
+
+.extraSpace{
+  margin-top: 75px;
+}
+
+.smallerBottomMargin{
+  margin-bottom: 0px;
 }
