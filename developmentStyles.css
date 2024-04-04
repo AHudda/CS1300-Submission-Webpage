@@ -18,8 +18,8 @@ body {
 }
 
 .sectionSpecifications{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
     h4{
       margin-bottom: 0px;
     }
@@ -40,7 +40,7 @@ body {
 }
 
 .imageSpecifications{
-  width: 700px;
+  width: 650px;
   height: auto; 
 }
 
@@ -77,10 +77,12 @@ ul li{
 .headerText{
   font-family:'Times New Roman', Times, serif;
   font-size: 24.5px;
+  margin-bottom: -7px;
 }
 .subHeaderText{
-    font-family:'Times New Roman', Times, serif;
-    font-size: 21px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 21px;
+  margin-top: 25px;
 }
 .bodyText{
   font-family:'Times New Roman', Times, serif;
